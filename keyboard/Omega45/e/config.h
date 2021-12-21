@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CONF_PRODUCT_ID 0x031E /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
 #define MANUFACTURER "Lotlab" /* 硬件制造商，用于蓝牙显示 */
-#define PRODUCT "Omega45E" /* 硬件名词，用于蓝牙显示 */
+#define PRODUCT "gong" /* 硬件名词，用于蓝牙显示 */
 #define MACADDR_SEPRATOR ' ' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
 /* USB HID report parameter */
@@ -98,8 +98,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
-#define UART_RXD 6 // UART_RX口IO 17
-#define UART_TXD 7 // UART_TX口IO 18
+#define UART_RXD 30 // UART_RX口IO 17
+#define UART_TXD 31 // UART_TX口IO 18
 //#define UART_DET 19 // UART 检测引脚，若此脚被拉低，则说明USB正在工作。若不配置则使用RX口作为检测引脚
 #define UART_BAUDRATE NRF_UART_BAUDRATE_115200 // 通信波特率，请不要修改
 
@@ -126,12 +126,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
 static const uint8_t row_pin_array[MATRIX_ROWS] = {11, 10, 9, 28};
-static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 13, 14, 15, 16, 17, 18, 19, 20, 22, 30, 12};
+static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 13, 14, 15, 16, 17, 18, 19, 20, 22, 6, 12};
 
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 // 旋钮配置
-#define ROTARY_ENCODER_A 31
+#define ROTARY_ENCODER_A 7
 #define ROTARY_ENCODER_B 8
 // 旋钮正向按钮映射
 #define ROTARY_ENCODER_POS 3,4
