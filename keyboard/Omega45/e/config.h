@@ -89,8 +89,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // RGB 配置
 #define LED_RGB_CC // 是否为共阴LED
 #define LED_RGB_R 5
-#define LED_RGB_G 4
-#define LED_RGB_B 3
+#define LED_RGB_G 6
+#define LED_RGB_B 7
 #define RGB_LIGHT_ANIMATIONS
 
 // 独立硬件按钮
@@ -125,14 +125,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
-static const uint8_t row_pin_array[MATRIX_ROWS] = {11, 10, 9, 28};
-static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 13, 14, 15, 16, 17, 18, 19, 20, 22, 6, 12};
+static const uint8_t row_pin_array[MATRIX_ROWS] = {11, 10, 9, 8};
+static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 27, 28, 29, 24, 23, 22, 21, 19, 18, 6, 12};
 
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 // 旋钮配置
 #define ROTARY_ENCODER_A 7
-#define ROTARY_ENCODER_B 8
+#define ROTARY_ENCODER_B 28
 // 旋钮正向按钮映射
 #define ROTARY_ENCODER_POS 3,4
 // 旋钮负向按钮映射
@@ -140,8 +140,8 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 13, 14, 15, 16, 17
 // 独立旋钮按键  用于关机后开机
 #define ROTARY_BUTTON 10
 // SSD1306 LCD屏幕
-#define SSD1306_SDA 23
-#define SSD1306_SCL 24
+#define SSD1306_SDA 16
+#define SSD1306_SCL 17
 
 /* define if matrix has ghost */
 // #define MATRIX_HAS_GHOST /* 按键阵列是否出现Ghost Key，若没有加二极管则需要启用这个项目 */
