@@ -1,17 +1,14 @@
 /*
 Copyright 2012 Jun Wako <wakojun@gmail.com>
 Copyright 2019 Jim Jiang <jim@lotlab.org>
-
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -26,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CONF_VENDOR_ID 0x4366 /* 配置项目内显示的VendorID */
 #define CONF_PRODUCT_ID 0x031E /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
-#define MANUFACTURER "Lotlab" /* 硬件制造商，用于蓝牙显示 */
+#define MANUFACTURER "Heygong" /* 硬件制造商，用于蓝牙显示 */
 #define PRODUCT "gong" /* 硬件名词，用于蓝牙显示 */
-#define MACADDR_SEPRATOR ' ' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
+#define MACADDR_SEPRATOR '_' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
 /* USB HID report parameter */
 #define KEYBOARD_EPSIZE 8 /* 键盘上传端点大小，请不要修改 */
@@ -71,10 +68,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define LED_CAPS 4  //caps led ：5 ； led1、2、3、4：19、20、27、26
 
 // ws2812 RGB 配置
-#define RGB_DI_PIN 1
-#define RGBLED_NUM 8
-#define RGBLIGHT_ANIMATIONS
-#define RGB_PWR_PIN 0 // P-mos
+// #define RGB_DI_PIN 1
+// #define RGBLED_NUM 8                                                                                                                                       //待定
+// #define RGBLIGHT_ANIMATIONS
+// #define RGB_PWR_PIN 0 // P-mos
 //#define RGB_PWR_PIN_REVERSE 12 // N-mos
 
 // 3灯指示配置引脚
@@ -94,7 +91,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_LIGHT_ANIMATIONS
 
 // 独立硬件按钮
-#define POWER_BUTTON 21
+// #define POWER_BUTTON 21                                                                                                                             //待定
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
@@ -111,7 +108,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define PIN_STANDBY !UCC2
 
 // 多用途 Bootloader 按钮
-#define NRF_BL_DFU_MULTI_ROLE_BTN 21
+// #define NRF_BL_DFU_MULTI_ROLE_BTN 21                                                                                                               //待定
 // Bootloader指示灯
 #define LED_DFU_INIT 5
 #define LED_DFU_START 4
@@ -126,19 +123,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
 static const uint8_t row_pin_array[MATRIX_ROWS] = {11, 10, 9, 8};
-static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 27, 28, 29, 24, 23, 22, 21, 19, 18, 6, 12};
+static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 27, 28, 29, 24, 23, 22, 21, 20, 19, 18, 12};
 
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 // 旋钮配置
-#define ROTARY_ENCODER_A 7
-#define ROTARY_ENCODER_B 28
+// #define ROTARY_ENCODER_A 7
+// #define ROTARY_ENCODER_B 28                                                                                                                              //待定
 // 旋钮正向按钮映射
-#define ROTARY_ENCODER_POS 3,4
+// #define ROTARY_ENCODER_POS 3,4
 // 旋钮负向按钮映射
-#define ROTARY_ENCODER_NEG 3,6
+// #define ROTARY_ENCODER_NEG 3,6
 // 独立旋钮按键  用于关机后开机
-#define ROTARY_BUTTON 10
+// #define ROTARY_BUTTON 10                                                                                                                                 //待定
 // SSD1306 LCD屏幕
 #define SSD1306_SDA 16
 #define SSD1306_SCL 17
