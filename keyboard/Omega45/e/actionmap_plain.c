@@ -38,14 +38,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 const action_t actionmaps[][MATRIX_ROWS][MATRIX_COLS] = { 
 	[0] = ACTIONMAP_ROT(
-        Q, W, W, E, R, T, Y, U, I, O, P, BSPC,
-        O, M, S, D, F, G, H, J, K, L, SCLN, ENT,
-        LSFT, RSFT, X, C, V, B, N, M, COMM, DOT, FN0, RSFT,
-        LCTL, LGUI, LALT, FN1, SPC, FN2, FN3, FN4, FN5,
-		VOLU, VOLD,  ESC),
+        ESC, W, W, E, R, T, Y, U, I, O, P, BSPC,
+        CAPS, A, S, D, F, G, H, J, K, L, SCLN, ENT,
+        LSFT, Z, X, C, V, B, N, M, COMM, DOT, FN0, RSFT,
+        LCTL, LGUI, LALT, FN1, SPC, FN2, FN3, FN4, FN5,VOLU, VOLD,  ESC),
 		
 	[1] = ACTIONMAP(
-        ESC, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, BSPC,
+        TAB, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, BSPC,
         TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, LBRC, RBRC, BSLS,
         TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
         TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS),
