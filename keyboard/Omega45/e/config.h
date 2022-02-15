@@ -23,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CONF_VENDOR_ID 0x4366 /* 配置项目内显示的VendorID */
 #define CONF_PRODUCT_ID 0x031E /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
-#define MANUFACTURER "Heygong" /* 硬件制造商，用于蓝牙显示 */
+#define MANUFACTURER "Lotlab" /* 硬件制造商，用于蓝牙显示 */
 #define PRODUCT "gong" /* 硬件名词，用于蓝牙显示 */
-#define MACADDR_SEPRATOR '_' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
+#define MACADDR_SEPRATOR ' ' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
 /* USB HID report parameter */
 #define KEYBOARD_EPSIZE 8 /* 键盘上传端点大小，请不要修改 */
@@ -68,10 +68,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define LED_CAPS 4  //caps led ：5 ； led1、2、3、4：19、20、27、26
 
 // ws2812 RGB 配置
-// #define RGB_DI_PIN 1
-// #define RGBLED_NUM 8                                                                                                                                       //待定
-// #define RGBLIGHT_ANIMATIONS
-// #define RGB_PWR_PIN 0 // P-mos
+#define RGB_DI_PIN 1
+#define RGBLED_NUM 8                                                                                                                                       //待定
+#define RGBLIGHT_ANIMATIONS
+#define RGB_PWR_PIN 0 // P-mos
 //#define RGB_PWR_PIN_REVERSE 12 // N-mos
 
 // 3灯指示配置引脚
@@ -91,7 +91,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_LIGHT_ANIMATIONS
 
 // 独立硬件按钮
-// #define POWER_BUTTON 21                                                                                                                             //待定
+#define POWER_BUTTON 21                                                                                                                             //待定
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
@@ -108,7 +108,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define PIN_STANDBY !UCC2
 
 // 多用途 Bootloader 按钮
-// #define NRF_BL_DFU_MULTI_ROLE_BTN 21                                                                                                               //待定
+#define NRF_BL_DFU_MULTI_ROLE_BTN 21                                                                                                               //待定
 // Bootloader指示灯
 #define LED_DFU_INIT 5
 #define LED_DFU_START 4
@@ -128,14 +128,14 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 27, 28, 29, 24, 23
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 // 旋钮配置
-// #define ROTARY_ENCODER_A 7
-// #define ROTARY_ENCODER_B 28                                                                                                                              //待定
+#define ROTARY_ENCODER_A 7
+#define ROTARY_ENCODER_B 28                                                                                                                              //待定
 // 旋钮正向按钮映射
-// #define ROTARY_ENCODER_POS 3,4
+#define ROTARY_ENCODER_POS 3,4
 // 旋钮负向按钮映射
-// #define ROTARY_ENCODER_NEG 3,6
+#define ROTARY_ENCODER_NEG 3,6
 // 独立旋钮按键  用于关机后开机
-// #define ROTARY_BUTTON 10                                                                                                                                 //待定
+#define ROTARY_BUTTON 10                                                                                                                                 //待定
 // SSD1306 LCD屏幕
 #define SSD1306_SDA 16
 #define SSD1306_SCL 17
