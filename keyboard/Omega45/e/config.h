@@ -91,7 +91,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_LIGHT_ANIMATIONS
 
 // 独立硬件按钮
-#define POWER_BUTTON 21                                                                                                                             //待定
+// #define POWER_BUTTON 21                                                                                                                             
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
@@ -108,7 +108,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define PIN_STANDBY !UCC2
 
 // 多用途 Bootloader 按钮
-#define NRF_BL_DFU_MULTI_ROLE_BTN 21                                                                                                               //待定
+#define NRF_BL_DFU_MULTI_ROLE_BTN 13
 // Bootloader指示灯
 #define LED_DFU_INIT 5
 #define LED_DFU_START 4
@@ -129,13 +129,13 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {25, 26, 27, 28, 29, 24, 23
 
 // 旋钮配置
 #define ROTARY_ENCODER_A 7
-#define ROTARY_ENCODER_B 28                                                                                                                              //待定
+#define ROTARY_ENCODER_B 14
 // 旋钮正向按钮映射
 #define ROTARY_ENCODER_POS 3,4
 // 旋钮负向按钮映射
 #define ROTARY_ENCODER_NEG 3,6
 // 独立旋钮按键  用于关机后开机
-#define ROTARY_BUTTON 10                                                                                                                                 //待定
+#define ROTARY_BUTTON 15                                                                                                                               
 // SSD1306 LCD屏幕
 #define SSD1306_SDA 16
 #define SSD1306_SCL 17
