@@ -39,15 +39,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 const action_t actionmaps[][MATRIX_ROWS][MATRIX_COLS] = { 
 	[0] = ACTIONMAP_ROT(
         ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC,
-        CAPS, A, S, D, F, G, H, J, K, L, SCLN, ENT,
-        LSFT, Z, X, C, V, B, N, M, COMM, DOT, FN0, RSFT,
-        LCTL, LGUI, LALT, FN1, SPC, FN2, FN3, FN4, FN5,VOLU, VOLD,  ESC),
+        CAPS, A, S, D, F, G, H, J, K, L, SCLN,
+        LSFT, Z, X, C, V, B, N, M, N, N, N,
+        LGUI, LALT, FN1, FN3, FN4, FN2 ),
 		
 	[1] = ACTIONMAP(
-        TAB, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, BSPC,
-        TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, LBRC, RBRC, BSLS,
-        TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
-        TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS),
+        TAB, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, TRNS,
+        TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+        TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,
+        TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS),
 
 	[2] = ACTIONMAP(
         F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,
